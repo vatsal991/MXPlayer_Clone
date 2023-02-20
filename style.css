@@ -1,6 +1,8 @@
 body{
   background-color: #121212;
   font-family: 'Mulish', sans-serif !important;
+  margin: 0;
+  padding: 0;
 }
 .navbar{
   background-image: linear-gradient(to bottom, #000 50%, rgba(0,0,0,0) 100%) !important;
@@ -368,6 +370,46 @@ ul strong{
   font-size: large;
 }
 
+.FooterBottom1{
+  width: 100vw;
+  height: max-content !important;
+  background-image: linear-gradient(to bottom, #121212, rgb(0,142,248,0.2));
+  padding: 30px;
+}
+
+.FooterBottom1 .sec1{
+  
+}
+
+.sec1 p{
+  color: white;
+  font-size: small;
+  margin-top: 20px;
+}
+
+.sec2 ul li a{
+  text-decoration: none;
+  color: #969CA3;
+  font-size: 14px;
+}
+
+.sec3 p{
+  color: #969CA3;
+}
+
+.sec3 img{
+  width: 100%;
+}
+
+.sec3 .row{
+  margin-top: 30px;
+}
+
+.AppLink{
+  width: 100%;
+  overflow-x: visible;
+  height: max-content;
+}
 @media only screen and (min-width:1301px) {
   .Card img{
     width: 230px;
@@ -492,6 +534,11 @@ ul strong{
   }
   .DFooterDetails{
     display: none;
+  }
+  .FooterBottom1{
+    width: 100vw !important;
+    background-color: #16202b;
+    margin-top: 20px;
   }
 }
 
