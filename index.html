@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>MX Player</title>
+</head>
+
+<body>
+
+  <!-- NavBar for Large Device -->
+  <nav class="navbar fixed-top navbar-expand-md bg-body-tertiary">
+    <div class="container-fluid DNavbar">
+      <a class="Logo navbar-brand" href="#">
+        <i style="color: #0079ff !important" class="fa-solid fa-circle-play fa-lg"></i><strong
+          style="margin-left: 8px;font-weight: 900;">MX</strong>PLAYER
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center">
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"><i style="color: #0079ff !important"
+                class="fa-solid fa-house"></i>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <div class="dropdown">
+              <p type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Shows
+              </p>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Drama</a></li>
+                <li><a class="dropdown-item" href="#">Thriller</a></li>
+                <li><a class="dropdown-item" href="#">Reality</a></li>
+                <li><a class="dropdown-item" href="#">Crime</a></li>
+                <li><a class="dropdown-item" href="#">Comedy</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <div class="dropdown">
+              <p type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Movies
+              </p>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Telugu</a></li>
+                <li><a class="dropdown-item" href="#">Tamil</a></li>
+                <li><a class="dropdown-item" href="#">Hindi</a></li>
+                <li><a class="dropdown-item" href="#">Bhojpuri</a></li>
+                <li><a class="dropdown-item" href="#">Malayalam</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item i-1">
+            <a class="dropdown-item " href="#">New & Free</a>
+          </li>
+
+          <li class="nav-item i-1">
+            <a class="dropdown-item" href="#">MX Gold</a>
+          </li>
+
+          <li class="nav-item i-1">
+            <a class="dropdown-item" href="#">MX VDesi</a>
+          </li>
+
+          <li class="nav-item i-1">
+            <div class="dropdown">
+              <p type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Music
+              </p>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Hindi</a></li>
+                <li><a class="dropdown-item" href="#">Tamil</a></li>
+                <li><a class="dropdown-item" href="#">Punjabi</a></li>
+                <li><a class="dropdown-item" href="#">English</a></li>
+                <li><a class="dropdown-item" href="#">Telugu</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item i-1">
+            <a class="dropdown-item" href="#">Buzz</a>
+          </li>
+
+
+
+          <!-- Tab others navbar option -->
+
+
+          <li class="nav-item TabOptions">
+            <div class="dropdown">
+              <p type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Other <i style="margin-left: 5px;margin-top: 4px;" class="fa-solid fa-chevron-down"></i>
+              </p>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">New & Free 🔥</a></li>
+                <li><a class="dropdown-item" href="#">MX Gold ⭐</a></li>
+                <li><a class="dropdown-item" href="#">MX VDesi</a></li>
+                <li><a class="dropdown-item" href="#">Music</a></li>
+                <li><a class="dropdown-item" href="#">Buzz</a></li>
+              </ul>
+            </div>
+          </li>
+
+        </ul>
+
+        <div class="d-flex align-items-center">
+          <i style="color: white" class="rightnav-item fa-solid fa-magnifying-glass"></i>
+          <div class="rightnav-item Add-Free">
+            <i style="color: gold" class="fa-solid fa-circle-play"></i> GO
+            AD-FREE
+          </div>
+          <i style="color: white" class="rightnav-item fa-solid fa-bell"></i>
+          <p style="color: white; margin-bottom: -1px" class="rightnav-item" style="margin-top: 12px !important">
+            Login
+          </p>
+          <i style="color: white" class="rightnav-item fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- Mobile Navbar -->
+
+  <div class="MobileNavBar sticky-top">
+    <div class="MNavUpperSec">
+      <div>
+        <i style="color:white" class="fa-sharp fa-solid fa-bars fa-lg"></i>
+        <a class="Logo navbar-brand mx-2" href="#">
+          <i style="color: #0079ff !important" class="fa-solid fa-circle-play fa-xl"></i><strong
+            style="margin-left: 8px;font-weight: 900;">MX</strong>PLAYER
+        </a>
+      </div>
+      <i style="color: white" class="fa-solid fa-magnifying-glass"></i>
+    </div>
+    <div class="MNavBottomSec">
+      <a href="#" class="Nav-Tabs Active">Home</a>
+      <a href="#" class="Nav-Tabs ">Shows</a>
+      <a href="#" class="Nav-Tabs ">Movies</a>
+      <a href="#" class="Nav-Tabs ">New & Free 🔥</a>
+      <a href="#" class="Nav-Tabs ">MX Gold ⭐</a>
+      <a href="#" class="Nav-Tabs ">Mx vdesi</a>
+      <a href="#" class="Nav-Tabs ">music</a>
+      <a href="#" class="Nav-Tabs ">buzz</a>
+    </div>
+  </div>
+
+
+  <!-- Mobile Carousel -->
+
+
+  <div id="carouselExampleDark" class="carousel carousel-dark slide">
+
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="https://goggler.my/wp-content/uploads/2019/12/JM2_INTL_30Sht_BRIDGE_03-e1575889045252.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="https://goggler.my/wp-content/uploads/2021/12/Spider_Man_No_Way_Home_Featured.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://goggler.my/wp-content/uploads/2021/10/F9TheFastSagaCover.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Image Carousel -->
+
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+
+    <div class="carousel-inner">
+
+
+      <div class="ImageCarousel carousel-item active">
+        <div class="DetailsSec">
+          <div class="CarouselInfoSec">
+            <p class="UpperTag">U/A 16+</p>
+
+            <div class="CarouselBottomSec">
+
+              <div class="BottomLeftSec">
+                <p class="language">Hindi, English<span class="mx-3">|</span>Action, Reality TV, Sport</p>
+                <p class="BottomDescription text-justify">Warrior Hunt is India’s first Sports Reality Show hosted by
+                  Bollywood Super Star Suniel Shetty. This season we have 16 MMA fighters, 8 males and 8 females, they
+                  are</p>
+                <div class="BottomButtonCotainer">
+                  <div class="Play"><i class="fa-solid fa-play fa-xl"></i><span>Play</span></div>
+                  <div class="MoreInfo">More Info</div>
+                  <div class="AddToList"><i class="fa-sharp fa-solid fa-circle-plus fa-xl"></i><span>Add to My
+                      List</span></div>
+                </div>
+              </div>
+
+              <div class="BottomRightSec d-flex align-items-center">
+                <div class="ChangeButton"><i class="fa-solid fa-chevron-left fa-xl"></i></div>
+                <div class="ChangeButton"><i class="fa-solid fa-chevron-right fa-xl"></i></div>
+                <div><i class="fa-solid fa-volume-xmark fa-xl"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="backgroundOverlay"></div>
+        <div class="bottomFade"></div>
+      </div>
+
+      <div class="ImageCarousel carousel-item active">
+
+        <div class="DetailsSec">
+          <div class="CarouselInfoSec">
+            <p class="UpperTag">U/A 16+</p>
+
+            <div class="CarouselBottomSec">
+
+              <div class="BottomLeftSec">
+                <p class="language">Hindi, English<span class="mx-3">|</span>Action, Reality TV, Sport</p>
+                <p class="BottomDescription text-justify">Warrior Hunt is India’s first Sports Reality Show hosted by
+                  Bollywood Super Star Suniel Shetty. This season we have 16 MMA fighters, 8 males and 8 females, they
+                  are</p>
+                <div class="BottomButtonCotainer">
+                  <div class="Play"><i class="fa-solid fa-play fa-xl"></i><span>Play</span></div>
+                  <div class="MoreInfo">More Info</div>
+                  <div class="AddToList"><i class="fa-sharp fa-solid fa-circle-plus fa-xl"></i><span>Add to My
+                      List</span></div>
+                </div>
+              </div>
+
+              <div class="BottomRightSec d-flex align-items-center">
+                <div class="ChangeButton"><i class="fa-solid fa-chevron-left fa-xl"></i></div>
+                <div class="ChangeButton"><i class="fa-solid fa-chevron-right fa-xl"></i></div>
+                <div><i class="fa-solid fa-volume-xmark fa-xl"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="backgroundOverlay"></div>
+        <div class="bottomFade"></div>
+      </div>
+
+
+
+      <div class="ImageCarousel carousel-item active">
+
+        <div class="DetailsSec">
+          <div class="CarouselInfoSec">
+            <p class="UpperTag">U/A 16+</p>
+
+            <div class="CarouselBottomSec">
+
+              <div class="BottomLeftSec">
+                <p class="language">Hindi, English<span class="mx-3">|</span>Action, Reality TV, Sport</p>
+                <p class="BottomDescription text-justify">Warrior Hunt is India’s first Sports Reality Show hosted by
+                  Bollywood Super Star Suniel Shetty. This season we have 16 MMA fighters, 8 males and 8 females, they
+                  are</p>
+                <div class="BottomButtonCotainer">
+                  <div class="Play"><i class="fa-solid fa-play fa-xl"></i><span>Play</span></div>
+                  <div class="MoreInfo">More Info</div>
+                  <div class="AddToList"><i class="fa-sharp fa-solid fa-circle-plus fa-xl"></i><span>Add to My
+                      List</span></div>
+                </div>
+              </div>
+
+              <div class="BottomRightSec d-flex align-items-center">
+                <div class="ChangeButton"><i class="fa-solid fa-chevron-left fa-xl"></i></div>
+                <div class="ChangeButton"><i class="fa-solid fa-chevron-right fa-xl"></i></div>
+                <div><i class="fa-solid fa-volume-xmark fa-xl"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="backgroundOverlay"></div>
+        <div class="bottomFade"></div>
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+  <!-- Movies Scrollbar -->
+
+
+  <div class="ScrollContainer MoviesSec-1">
+    <p class="Title">Trending In Movies <i class="fa-solid fa-chevron-right fa-sm" style="color: #0662cd;"></i></p>
+    <div class="CardList">
+      <div class="Card">
+        <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ngl2FKBlU4fhbdsrtdom9LVLBXw.jpg" alt="">
+      </div>
+
+      <div class="Card">
+        <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/kVwudGk77ilXN4TwJn0B3pZtS6N.jpg" alt="">
+      </div>
+
+      <div class="Card">
+        <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/bONYUEn7iMFCebhDuqNG7hqqwoO.jpg" alt="">
+      </div>
+
+      <div class="Card">
+        <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/AaJ5R5xCOsPjCdU3tGbCG9qP2lT.jpg" alt="">
+      </div>
+
+      <div class="Card">
+        <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/sv1xJUazXeYqALzczSZ3O6nkH75.jpg" alt="">
+      </div>
+
+      <div class="Card">
+        <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg" alt="">
+      </div>
+
+      <div class="Card">
+        <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg" alt="">
+      </div>
+
+      <div class="Card">
+        <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/jS8mOKloyEzqQKrne0w4Upu1pnv.jpg" alt="">
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Mx Web shows -->
+
+
+  <div class="ScrollContainer">
+    <p class="Title">MX Original Web Shows <i class="fa-solid fa-chevron-right fa-sm" style="color: #0662cd;"></i></p>
+    <div class="CardList">
+      <div class="Card">
+        <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg" alt="">
+      </div>
+
+      <div class="Card">
+        <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ggFHVNu6YYI5L9pCfOacjizRGt.jpg" alt="">
+      </div>
+
+      <div class="Card">
+        <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/5yzb0iWXilLpg3iz1LT3H3UGBYs.jpg" alt="">
+      </div>
+
+      <div class="Card">
+        <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/9PFonBhy4cQy7Jz20NpMygczOkv.jpg" alt="">
+      </div>
+
+      <div class="Card">
+        <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/49WJfeN0moxb9IPfGn8AIqMGskD.jpg" alt="">
+      </div>
+
+      <div class="Card">
+        <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/pjdPGHqUe60ZGQJR1TItVNaV4it.jpg" alt="">
+      </div>
+
+      <div class="Card">
+        <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/hlLXt2tOPT6RRnjiUmoxyG1LTFi.jpg" alt="">
+      </div>
+
+      <div class="Card">
+        <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/bXo9sDqMmo4dEOPSPLR7sdYPTvz.jpg" alt="">
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Movies you might link -->
+
+  <div class="ScrollContainer">
+    <p class="Title">Movies You Might Like <i class="fa-solid fa-chevron-right fa-sm" style="color: #0662cd;"></i></p>
+    <div class="CardList">
+      <div class="Card">
+        <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/uJYYizSuA9Y3DCs0qS4qWvHfZg4.jpg" alt="">
+      </div>
+
+      <div class="Card">
+        <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/9z4jRr43JdtU66P0iy8h18OyLql.jpg" alt="">
+      </div>
+
+      <div class="Card">
+        <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/rg8N7x27Ef6PvlIiioLStf9ZaIO.jpg" alt="">
+      </div>
+
+      <div class="Card">
+        <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/cHFZA8Tlv03nKTGXhLOYOLtqoSm.jpg" alt="">
+      </div>
+
+      <div class="Card">
+        <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/qhcwrnnCnN8NE1N6XXKHFmveJR9.jpg" alt="">
+      </div>
+
+      <div class="Card">
+        <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/8bizZsXoAsOTbhyFKfBogC8mgG2.jpg" alt="">
+      </div>
+
+      <div class="Card">
+        <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/vUUqzWa2LnHIVqkaKVlVGkVcZIW.jpg" alt="">
+      </div>
+
+      <div class="Card">
+        <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/v5IhnvdjKjA1nS0vEUMwjdaygNE.jpg" alt="">
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Trending SHows On MX -->
+
+  <div class="ScrollContainer">
+    <p class="Title">Trending SHows On MX <i class="fa-solid fa-chevron-right fa-sm" style="color: #0662cd;"></i></p>
+    <div class="CardList">
+      <div class="Card">
+        <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/qJ2tW6WMUDux911r6m7haRef0WH.jpg" alt="">
+      </div>
+
+      <div class="Card">
+        <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg" alt="">
+      </div>
+
+      <div class="Card">
+        <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/iiZZdoQBEYBv6id8su7ImL0oCbD.jpg" alt="">
+      </div>
+
+      <div class="Card">
+        <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg" alt="">
+      </div>
+
+      <div class="Card">
+        <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg" alt="">
+      </div>
+
+      <div class="Card">
+        <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg" alt="">
+      </div>
+
+      <div class="Card">
+        <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/i0enkzsL5dPeneWnjl1fCWm6L7k.jpg" alt="">
+      </div>
+
+      <div class="Card">
+        <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/yeJ5Nj1k2NA0bBZjkZ10PvQKjTD.jpg" alt="">
+      </div>
+
+    </div>
+
+
+    <div class="FooterUpperSec row w-95 m-auto">
+      <ul class="col-lg-2 col-md-2 col-sm-2 col-4">
+        <strong>Trending</strong>
+        <li>Matsya Kaand</li>
+        <li>Indori Ishq</li>
+        <li class="ShowMore1">View All <i class="fa-sharp fa-solid fa-chevron-down"></i></li>
+      </ul>
+
+      <ul class="col-lg-2 col-md-2 col-sm-2 col-4">
+        <strong>Movies by Language</strong>
+        <li>Matsya Kaand</li>
+        <li>Indori Ishq</li>
+        <li class="ShowMore1">View All <i class="fa-sharp fa-solid fa-chevron-down"></i></li>
+
+      </ul>
+
+      <ul class="col-lg-2 col-md-2 col-sm-2 col-4">
+        <strong>Song by Genre</strong>
+        <li>Matsya Kaand</li>
+        <li>Indori Ishq</li>
+        <li class="ShowMore1">View All <i class="fa-sharp fa-solid fa-chevron-down"></i></li>
+
+      </ul>
+
+      <ul class="col-lg-2 col-md-2 col-sm-2 col-4">
+        <strong>Movies by Genre</strong>
+        <li>Matsya Kaand</li>
+        <li>Indori Ishq</li>
+        <li class="ShowMore1">View All <i class="fa-sharp fa-solid fa-chevron-down"></i></li>
+
+      </ul>
+
+      <ul class="col-lg-2 col-md-2 col-sm-2 col-4">
+        <strong>Popular Actors</strong>
+        <li>Matsya Kaand</li>
+        <li>Indori Ishq</li>
+        <li class="ShowMore1">View All <i class="fa-sharp fa-solid fa-chevron-down"></i></li>
+
+      </ul>
+
+      <ul class="col-lg-2 col-md-2 col-sm-2 col-4">
+        <strong>International Shows</strong>
+        <li>Matsya Kaand</li>
+        <li>Indori Ishq</li>
+        <li class="ShowMore1">View All <i class="fa-sharp fa-solid fa-chevron-down"></i></li>
+
+      </ul>
+
+      <div class="ShowMore">Expand All <i class="fa-sharp fa-solid fa-chevron-down"></i></div>
+
+    </div>
+
+    <div class="DFooterDetails row">
+      <div class="FooterDetails col-lg-4 ">
+        <strong style="color: #969CA3;">Watch the Latest Movies in Hindi, Tamil, Telugu and Kannada Online on MX Player</strong>
+        <p style="color:#969CA3" class="text-truncate">If you are looking for the latest movies, most popular web shows, newly released songs as well as the latest news, then MX Player is your one-stop destination for all your entertainment needs. One of the best OTT platforms in India, MX Player is a free video streaming service that you can enjoy on your laptop, TV, mobile phone and other smart devices. You do not fight for the television remote anymore, as all your favourite TV channels live are streaming for free right here. From the best award-winning web shows and blockbuster movies to the latest music videos and daily TV shows, you name it and we have it for you. All you need to do is connect your smart device to the internet and let us do the rest. So you can now take the entertainment with you wherever you go.
+        </p>
+      </div>
+
+      <div class="FooterDetails col-lg-4 ">
+        <strong style="color: #969CA3;">Watch the Latest Movies in Hindi, Tamil, Telugu and Kannada Online on MX Player</strong>
+        <p style="color:#969CA3" class="text-truncate">If you are looking for the latest movies, most popular web shows, newly released songs as well as the latest news, then MX Player is your one-stop destination for all your entertainment needs. One of the best OTT platforms in India, MX Player is a free video streaming service that you can enjoy on your laptop, TV, mobile phone and other smart devices. You do not fight for the television remote anymore, as all your favourite TV channels live are streaming for free right here. From the best award-winning web shows and blockbuster movies to the latest music videos and daily TV shows, you name it and we have it for you. All you need to do is connect your smart device to the internet and let us do the rest. So you can now take the entertainment with you wherever you go.
+        </p>
+      </div>
+
+      <div class="FooterDetails col-lg-4 ">
+        <strong style="color: #969CA3;">Watch the Latest Movies in Hindi, Tamil, Telugu and Kannada Online on MX Player</strong>
+        <p style="color:#969CA3" class="text-truncate">If you are looking for the latest movies, most popular web shows, newly released songs as well as the latest news, then MX Player is your one-stop destination for all your entertainment needs. One of the best OTT platforms in India, MX Player is a free video streaming service that you can enjoy on your laptop, TV, mobile phone and other smart devices. You do not fight for the television remote anymore, as all your favourite TV channels live are streaming for free right here. From the best award-winning web shows and blockbuster movies to the latest music videos and daily TV shows, you name it and we have it for you. All you need to do is connect your smart device to the internet and let us do the rest. So you can now take the entertainment with you wherever you go.
+        </p>
+      </div>
+
+      <div class="ShowMore">Expand All <i class="fa-sharp fa-solid fa-chevron-down"></i></div>
+
+    </div>
+    <script src="https://kit.fontawesome.com/f7a769db7f.js" crossorigin="anonymous"></script>
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>
